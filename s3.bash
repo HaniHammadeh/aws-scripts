@@ -90,7 +90,7 @@ case $COMMAND in
         fi
         aws s3api get-object-attributes \
             --bucket my-bucket \
-            --key doc1.rtf \
+            --key $2 \
             --object-attributes "StorageClass" "ETag" "ObjectSize"
         # Display information about an object
         ;;
